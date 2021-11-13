@@ -8,4 +8,4 @@ for i in range(a):
             print(cnt,end=" ")
         b = b//2
         cnt+=1
-    print()
+    print()ww
