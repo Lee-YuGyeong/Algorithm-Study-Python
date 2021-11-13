@@ -9,4 +9,4 @@ for i in range(a):
         b = b//2
         cnt+=1
     print()
-    last test
+    last testwwwwwwwwwwwwwwwwww
