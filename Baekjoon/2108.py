@@ -1,23 +1,22 @@
 import sys
+from collections import Counter
+
 input = sys.stdin.readline
 n = int(input())
-dic={}
 arr=[]
 for _ in range(n):
     m = int(input())
-    if m in dic: dic[m]+=1
-    else : dic[m]=1
     arr.append(m)
-
-dic = sorted(dic.items(),key=lambda x:(-x[1],x[0]))
-print(int(round(sum(arr)/n,0)))
+arr.sort()
+arr2 = Counter(arr).most_common()
+print(round(sum(arr)/n))
 print(sorted(arr)[n//2])
-if len(dic)<2:
-    print(dic[0][0])
+if len(arr2)<2:
+    print(arr2[0][0])
 else:
-    if dic[0][1] == dic[1][1]:
-        print(dic[1][0])
+    if arr2[0][1] == arr2[1][1]:
+        print(arr2[1][0])
     else:
-        print(dic[0][0])
+        print(arr2[0][0])
 print(max(arr)-min(arr))
 
