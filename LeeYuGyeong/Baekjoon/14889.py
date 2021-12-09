@@ -7,8 +7,6 @@ def dfs():
         break
     for i in range(n):
         
-        
-
 arr=[]
 s = []
 n = int(input())
