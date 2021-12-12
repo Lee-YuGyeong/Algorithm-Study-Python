@@ -7,6 +7,7 @@ for i in range(4,11):
     d[i]=d[i-3]+d[i-2]+d[i-1]
 
 n = int(input())
+
 for _ in range(n):
     m = int(input())
     print(d[m])
