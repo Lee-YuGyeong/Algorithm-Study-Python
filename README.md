@@ -15,4 +15,4 @@
 - 모르는 문제는 수요일에 질문하기
 
 
-더 많은 문제와 자세한 풀이방법은 https://e-you.tistory.com/ 에서 볼 수 있습니다.
+더 많은 문제와 자세한 풀이방법은 https://e-you.tistory.com/category/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8 에서 볼 수 있습니다.
