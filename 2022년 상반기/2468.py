@@ -3,7 +3,7 @@ from collections import deque
 
 n = int(input())
 
-maxinum = 0
+maxinum = 0 # 가장 높은 지역 높이
 arr = []
 for _ in range(n):
     tmp = list(map(int,sys.stdin.readline().strip().split()))
@@ -13,6 +13,7 @@ for _ in range(n):
 dx = [0,1,0,-1]
 dy = [1,0,-1,0]
 
+# 안전한 지역 구하기
 def bfs(i,j,area,visited):
     queue = deque([])
     queue.append([i,j])
@@ -37,6 +38,7 @@ def water(arr,l):
                 tmp[i][j] = 0
     return tmp
 
+# 안전 영역 최댓값 구하기
 sol=0
 for k in range(maxinum):
     area = water(arr,k)
